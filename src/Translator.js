@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-import APIKey from "./apikey";
 import "./Translator.css";
+import { config } from "./config";
 
 export default function Translator() {
     const targetLanguages = [
@@ -37,7 +37,7 @@ export default function Translator() {
     const [language, setLanguage] = useState("");
     const [errors, setErrors] = useState([]);
     const [translation, setTranslation] = useState("");
-    const key = APIKey();
+    const key = config.API_KEY;
 
     const possErrors = {
         noLang: "Please choose a language",

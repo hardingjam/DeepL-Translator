@@ -16,7 +16,7 @@
 
 .Translator > button,
 select {
-    min-width: 10vw;
+    min-width: 20vw;
     align-self: center;
     margin: 5px;
     background-color: transparent;
@@ -48,6 +48,7 @@ button:active {
     transform: scale(0.99);
 }
 
-.errors {
+.errors > p {
+    margin-top: 5px;
     color: red;
 }
