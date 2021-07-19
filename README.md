@@ -16,7 +16,7 @@ Simply replace the value of API_KEY with your DeepL Free key to start translatin
 
 ### Starting the app
 
-First, run:
+First, download the repo using your chosen method, navigate to the folder containing the code, then run:
 
 ### `npm install`
 
