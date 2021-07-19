@@ -2,9 +2,17 @@
 
 This simple React app will translate given text to any language in the DeepL Translate library.
 
-### Starting the app
+### Get authorised
 
-In the interest of security, I have not included an API Key in this version. In order to translate text, change the return value in apikey.js to your own "DeepL API Free" key.
+In the interest of security, I have not included an API Key in this version. In order to translate text, simply create a config.js file in the src directory, with the following code:
+
+```javascript
+export const config = {
+    API_KEY: "Your DeepL Free API key goes here",
+};
+```
+
+### Starting the app
 
 In the project directory, you can run:
 
