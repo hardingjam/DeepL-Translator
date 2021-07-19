@@ -58,7 +58,6 @@ export default function Translator() {
     }
 
     function handleClick() {
-        console.log("lang", language);
         if (!language || language === "Select target language") {
             if (!errors.includes(possErrors.noLang)) {
                 setErrors([...errors, possErrors.noLang]);
@@ -76,7 +75,8 @@ export default function Translator() {
                 .post(
                     `https://api-free.deepl.com/v2/translate?auth_key=${key}&text=${text}&source_lang=EN&target_lang=${language}`
                 )
-                .then(({ data }) => setTranslation(data.translations[0].text));
+                .then(({ data }) => setTranslation(data.translations[0].text))
+                .catch((err) => console.log(err));
         }
     }
 
